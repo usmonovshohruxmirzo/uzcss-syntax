@@ -46,7 +46,7 @@
     "commands": [
       {
         "command": "uzcss.applyColors",
-        "title": "Apply UZCSS Colors"
+        "title": "Apply uzCSS Colors"
       }
     ]
   }
