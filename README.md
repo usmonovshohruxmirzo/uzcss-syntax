@@ -1,4 +1,4 @@
-# uzCss Syntax
+# uzCSS Syntax
 
 - **Publisher:** webbro-software
 
@@ -8,7 +8,7 @@
 
 ### Overview
 
-`uzCss Syntax` provides syntax highlighting support for `.uzcss` files in Visual Studio Code. Write UZCSS code with vibrant colors for selectors, properties, values, and comments — improving readability and development experience.
+`uzCSS Syntax` provides syntax highlighting support for `.uzcss` files in Visual Studio Code. Write uzCSS code with vibrant colors for selectors, properties, values, and comments — improving readability and development experience.
 
 ---
 
@@ -20,14 +20,14 @@
 
 - Syntax highlighting for `.uzcss` files
 - Colors for selectors, property names, values, and comments
-- Custom command to apply UZCSS colors to your editor theme
+- Custom command to apply uzCSS colors to your editor theme
 
 ---
 
 ### Usage
 
 1. Open a `.uzcss` file in VS Code.
-2. Run the command **Apply UZCSS Colors** from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Run the command **Apply uzCSS Colors** from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 3. Enjoy the enhanced syntax highlighting.
 4. Reload VS Code if colors do not appear immediately.
 
