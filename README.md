@@ -1,6 +1,7 @@
 # uzCss Syntax
 
 **Publisher:** webbro-software
+
 **Version:** 0.0.1
 
 ---
@@ -12,6 +13,8 @@
 ---
 
 ### Demo
+
+![Screenshot 2025-06-06 230423](https://github.com/user-attachments/assets/9a52ac3a-3b27-4671-b2e2-cadba5d61e47)
 
 
 ### Features
