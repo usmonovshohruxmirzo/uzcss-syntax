@@ -1,0 +1,37 @@
+{
+  "name": "UZCSS Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": "entity.name.selector",
+      "settings": {
+        "foreground": "#ff79c6"
+      }
+    },
+    {
+      "scope": "support.type.property-name",
+      "settings": {
+        "foreground": "#f1fa8c"
+      }
+    },
+    {
+      "scope": "string.unquoted.property-value",
+      "settings": {
+        "foreground": "#8be9fd"
+      }
+    },
+    {
+      "scope": "comment.line.double-slash",
+      "settings": {
+        "foreground": "#6272a4"
+      }
+    },
+    {
+      "scope": "comment.block",
+      "settings": {
+        "foreground": "#6272a4"
+      }
+    }
+  ]
+}
