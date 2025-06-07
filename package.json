@@ -8,6 +8,7 @@
   "description": "Syntax highlighting for .uzcss files",
   "version": "0.0.1",
   "main": "./extension.js",
+  "activationEvents": [],
   "engines": {
     "vscode": "^1.85.0"
   },
