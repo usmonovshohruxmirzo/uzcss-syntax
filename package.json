@@ -1,9 +1,10 @@
 {
   "name": "uzcss-syntax",
   "displayName": "UZCSS Syntax",
-  "description": "Basic syntax highlighting for .uzcss files",
+  "publisher": "your_publisher_name",
+  "description": "Syntax highlighting for UZCSS files",
   "version": "0.0.1",
-  "publisher": "@webbro-software",
+  "main": "./extension.js",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -29,6 +30,15 @@
         "scopeName": "source.uzcss",
         "path": "./syntaxes/uzcss.tmLanguage.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "uzcss.applyColors",
+        "title": "Apply UZCSS Colors"
+      }
     ]
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
   }
 }

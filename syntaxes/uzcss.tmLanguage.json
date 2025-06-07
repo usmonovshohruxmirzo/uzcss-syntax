@@ -3,8 +3,38 @@
   "name": "UZCSS",
   "patterns": [
     {
+      "begin": "(\\@ekran\\s*\\([^)]*\\)\\s*\\{)",
+      "beginCaptures": {
+        "0": { "name": "keyword.control.at-rule.uzcss" }
+      },
+      "end": "\\}",
+      "patterns": [
+        {
+          "name": "entity.name.selector.uzcss",
+          "match": "[^\\s{}][^{}]*?(?=\\s*\\{)"
+        },
+        {
+          "name": "support.type.property-name.uzcss",
+          "match": "\\b[a-zA-Z0-9\\-_'`]+(?=\\s*:)"
+        },
+        {
+          "name": "string.unquoted.property-value.uzcss",
+          "match": "(?<=:\\s?)[^;{}]+"
+        },
+        {
+          "name": "comment.line.double-slash.uzcss",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.uzcss",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    {
       "name": "entity.name.selector.uzcss",
-      "match": "^[^\\s{}][^{}]*?(?=\\s*\\{)"
+      "match": "[^\\s{}][^{}]*?(?=\\s*\\{)"
     },
     {
       "name": "support.type.property-name.uzcss",
