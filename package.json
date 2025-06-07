@@ -1,8 +1,8 @@
 {
   "name": "uzcss-syntax",
-  "displayName": "UZCSS Syntax",
-  "publisher": "your_publisher_name",
-  "description": "Syntax highlighting for UZCSS files",
+  "displayName": "uzCss Syntax",
+  "publisher": "@webbro-software",
+  "description": "Syntax highlighting for .uzcss files",
   "version": "0.0.1",
   "main": "./extension.js",
   "engines": {
