@@ -1,17 +1,25 @@
 {
   "name": "uzcss-syntax",
   "displayName": "uzCss Syntax",
-  "publisher": "@webbro-software",
+  "publisher": "webbro-software",
   "description": "Syntax highlighting for .uzcss files",
   "version": "0.0.1",
   "main": "./extension.js",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "icon": "/icon/icon.png",
+  "icon": "icon/icon.png",
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usmonovshohruxmirzo/uzcss-syntax.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  },
   "contributes": {
     "languages": [
       {
@@ -38,8 +46,5 @@
         "title": "Apply UZCSS Colors"
       }
     ]
-  },
-  "dependencies": {
-    "vscode": "^1.1.37"
   }
 }
