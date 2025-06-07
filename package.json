@@ -2,6 +2,9 @@
   "name": "uzcss-syntax",
   "displayName": "uzCss Syntax",
   "publisher": "webbro-software",
+  "author": {
+    "name": "Shoxruxmirzo Usmonov"
+  },
   "description": "Syntax highlighting for .uzcss files",
   "version": "0.0.1",
   "main": "./extension.js",
