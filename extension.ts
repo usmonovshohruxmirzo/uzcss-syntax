@@ -1,12 +1,25 @@
-const vscode = require("vscode");
+import * as vscode from "vscode";
 
-function activate(context) {
-  let disposable = vscode.commands.registerCommand(
+interface TextMateRule {
+  scope: string;
+  settings: {
+    foreground: string;
+  };
+}
+
+interface TokenColorCustomizations {
+  textMateRules?: TextMateRule[];
+  [key: string]: unknown;
+}
+
+export function activate(context: vscode.ExtensionContext): void {
+  const disposable: vscode.Disposable = vscode.commands.registerCommand(
     "uzcss.applyColors",
-    async () => {
-      const config = vscode.workspace.getConfiguration();
+    async (): Promise<void> => {
+      const config: vscode.WorkspaceConfiguration =
+        vscode.workspace.getConfiguration();
 
-      const uzcssColors = {
+      const uzcssColors: { textMateRules: TextMateRule[] } = {
         textMateRules: [
           {
             scope: "entity.name.selector.uzcss",
@@ -27,14 +40,17 @@ function activate(context) {
         ],
       };
 
-      const existing = config.get("editor.tokenColorCustomizations") || {};
+      const existing: TokenColorCustomizations =
+        config.get<TokenColorCustomizations>(
+          "editor.tokenColorCustomizations"
+        ) || {};
 
-      const mergedTextMateRules = [
+      const mergedTextMateRules: TextMateRule[] = [
         ...(existing.textMateRules || []),
         ...uzcssColors.textMateRules,
       ];
 
-      const updated = {
+      const updated: TokenColorCustomizations = {
         ...existing,
         textMateRules: mergedTextMateRules,
       };
@@ -49,7 +65,11 @@ function activate(context) {
           "UZCSS colors applied! Please reload VSCode if needed."
         );
       } catch (err) {
-        vscode.window.showErrorMessage("Failed to apply UZCSS colors: " + err);
+        if (err instanceof Error) {
+          vscode.window.showErrorMessage(
+            "Failed to apply UZCSS colors: " + err.message
+          );
+        }
       }
     }
   );
@@ -61,9 +81,4 @@ function activate(context) {
   );
 }
 
-function deactivate() {}
-
-module.exports = {
-  activate,
-  deactivate,
-};
+export function deactivate(): void {}
