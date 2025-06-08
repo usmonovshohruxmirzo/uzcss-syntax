@@ -7,7 +7,10 @@
   },
   "description": "Syntax highlighting for .uzcss files",
   "version": "0.0.4",
-  "main": "./extension.js",
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "npx tsc -p ./"
+  },
   "activationEvents": [],
   "engines": {
     "vscode": "^1.85.0"
@@ -22,6 +25,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.15.30",
     "vscode": "^1.1.37"
   },
   "contributes": {
