@@ -77,7 +77,7 @@ export function activate(context: vscode.ExtensionContext): void {
   context.subscriptions.push(disposable);
 
   vscode.window.showInformationMessage(
-    'uzCSS Syntax extension installed! Run "Apply UZCSS Colors" command to enable colors.'
+    'uzCSS Syntax extension installed! Run "Apply uzCSS Colors" command to enable colors.'
   );
 }
 
