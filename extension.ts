@@ -62,12 +62,12 @@ export function activate(context: vscode.ExtensionContext): void {
           vscode.ConfigurationTarget.Global
         );
         vscode.window.showInformationMessage(
-          "UZCSS colors applied! Please reload VSCode if needed."
+          "uzCSS colors applied! Please reload VSCode if needed."
         );
       } catch (err) {
         if (err instanceof Error) {
           vscode.window.showErrorMessage(
-            "Failed to apply UZCSS colors: " + err.message
+            "Failed to apply uzCSS colors: " + err.message
           );
         }
       }
