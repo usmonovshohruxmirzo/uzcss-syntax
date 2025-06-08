@@ -6,7 +6,7 @@
     "name": "Shoxruxmirzo Usmonov"
   },
   "description": "Syntax highlighting for .uzcss files",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./out/extension.js",
   "scripts": {
     "compile": "npx tsc -p ./"
