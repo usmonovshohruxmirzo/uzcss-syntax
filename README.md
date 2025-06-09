@@ -1,6 +1,6 @@
 # uzCSS Syntax
 
-- **Publisher:** webbro-software
+- **Publisher:** [webbro-software](github.com/webbro-software)
 
 - **Version:** 0.0.6
 
